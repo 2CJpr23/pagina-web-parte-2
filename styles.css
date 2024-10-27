@@ -1,0 +1,110 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #e5ff9d;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilizando o cabeçalho */
+  .cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilizando o menu */
+  .container--menu {
+    flex-grow: 1;
+  }
+  
+  .lista-menu {
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ .lista-menu {
+    display: block;
+  }
+  
+  /* Logo centralizada */
+  .container--logo {
+    justify-content: center;
+    flex-grow: 2;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+  
+  /* Ícones de favoritos, compras e usuário */
+  .container--icones {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .container--icones img {
+    width: 30px;
+    height: auto;
+  }
+  
+  /* Estilos gerais */
+  .banner {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .banner__titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner__pesquisa {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 500px;
+    font-size: 1rem;
+  }
+  
+  /* Swiper slider ajustes */
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  
